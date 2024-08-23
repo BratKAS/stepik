@@ -4,6 +4,15 @@
 Welcome to My Project's documentation!
 =======================================
 
+Топик на русском
+================
+
+субтопик
+--------
+
+а такой
+~~~~~~~
+
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents:
@@ -16,6 +25,7 @@ Welcome to My Project's documentation!
    list
    table
    code
+   ref
    example
 
 .. note::
