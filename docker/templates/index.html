@@ -1,0 +1,23 @@
+      <!DOCTYPE html>
+   <html lang="ru">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Мой сайт на Flask</title>
+       <script>
+           function handleButtonClick() {
+               fetch('/button_click', { method: 'POST' })
+                   .then(response => response.text())
+                   .then(data => {
+                       document.getElementById('message').innerText = data;
+                   });
+           }
+       </script>
+   </head>
+   <body>
+       <h1>Добро пожаловать на мой сайт!</h1>
+       <p>Это простой сайт, созданный с помощью Flask.</p>
+       <button onclick="handleButtonClick()">Нажми меня!</button>
+       <p id="message"></p>
+   </body>
+   </html>
